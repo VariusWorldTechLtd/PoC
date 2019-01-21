@@ -1,0 +1,47 @@
+// ion-content {
+//     max-width: 540px !important;
+//     max-height: 768px !important;
+// }
+
+.welcome-icon {
+    position: fixed;
+    top: 130px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.welcome-title {
+    color: #fff;
+    margin-top: 100px;
+}
+
+#welcome-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.welcome-overlay {
+    position: fixed;
+    bottom: 0;
+    background: rgba(41.6, 66.7, 89.4, 0.9);
+    color: #f1f1f1;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.welcome-content {
+    position: fixed;
+    bottom: 0;
+    // background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    z-index: 2;
+}

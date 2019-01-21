@@ -1,0 +1,39 @@
+<ion-header translucent no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="secondary"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-grid>
+
+    <div padding text-center style="margin-top: 56px;">
+      <img src="assets/images/vox_wallet-2col.svg" width="244px" height="auto">
+    </div>
+
+    <ion-row lines="none">
+      <ion-col text-center>
+        <h1>Verifying your identity</h1>
+        <h6>We need to take two simple steps to protect against financial crime. It should only take a minute or two.</h6>
+      </ion-col>
+    </ion-row>
+
+    <ion-row text-center>
+      <ion-col text-center>
+        <ion-card>
+          <img src="assets/images/selfie.jpg" width="auto" height="300px">
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <div padding text-center>
+      <!-- <div id="cameraMovin"></div> -->
+      <ion-button color="secondary" expand="block" (click)="onSelfie();">Take a selfie</ion-button>
+    </div>
+  </ion-grid>
+
+</ion-content>

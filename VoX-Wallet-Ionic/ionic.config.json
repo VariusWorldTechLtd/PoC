@@ -1,0 +1,8 @@
+{
+  "name": "voxwallet",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "f37df377"
+}

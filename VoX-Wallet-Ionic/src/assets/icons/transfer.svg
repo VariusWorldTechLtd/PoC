@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="27px" viewBox="0 0 25 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>transfer_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="App_Screen_Mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-X-Onboarding-Welcome_New_User" transform="translate(-212.000000, -730.000000)" stroke="#FFFFFF" stroke-width="0.844">
+            <g id="transfer_icon" transform="translate(212.000000, 730.000000)">
+                <polygon id="Stroke-1" points="7.4297 0.6656 0.8917 8.6426 3.9417 8.6426 3.9417 15.6186 10.9177 15.6186 10.9177 8.6426 13.9677 8.6426"></polygon>
+                <polygon id="Stroke-3" points="17.792 26.8355 24.33 18.8575 21.28 18.8575 21.28 11.8815 14.304 11.8815 14.304 18.8575 11.254 18.8575"></polygon>
+                <polyline id="Stroke-5" points="10.918 8.6422 13.968 8.6422 7.43 0.6652 0.892 8.6422 3.941 8.6422 3.941 15.6192 10.918 15.6192"></polyline>
+                <polygon id="Stroke-7" points="17.792 26.8355 24.33 18.8575 21.28 18.8575 21.28 11.8815 14.304 11.8815 14.304 18.8575 11.254 18.8575"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

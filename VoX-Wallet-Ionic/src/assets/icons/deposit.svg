@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="28px" viewBox="0 0 29 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>deposit_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="App_Screen_Mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-X-Onboarding-Welcome_New_User" transform="translate(-121.000000, -729.000000)" stroke="#FFFFFF">
+            <g id="deposit_icon" transform="translate(121.000000, 730.000000)">
+                <path d="M15.6883,13.4491 L0.0003,13.4491" id="Stroke-1"></path>
+                <polyline id="Stroke-3" points="10.4559 9.1571 15.8589 13.4591 10.4799 17.7411"></polyline>
+                <polyline id="Stroke-4" points="7.9295 0.4022 28.0855 0.4022 28.0855 26.4962 7.9295 26.4962"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

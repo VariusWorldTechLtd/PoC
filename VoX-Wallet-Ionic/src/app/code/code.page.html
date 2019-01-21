@@ -1,0 +1,38 @@
+<ion-header translucent no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="secondary"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+
+    <div padding text-center style="margin-top: 56px;">
+      <img src="assets/images/vox_wallet-2col.svg" width="244px" height="auto">
+    </div>
+
+    <ion-item lines="none">
+      <h1>Enter Verification Code</h1>
+    </ion-item>
+
+    <ion-item>
+      <ion-input #phoneControl type="text" placeholder="Verification Code" 
+        (keyup)="onKeyUp(phoneControl.value);"
+        minlength="6" maxlength="6"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <div id="phoneMovin"></div>
+
+    <!-- Temporary until verification is rock solid -->
+    <div style="position: absolute; bottom:0;">
+      <a style="color:white" href="/details">SKIP</a>
+    </div>
+    <!-- end of temporary -->
+
+</ion-content>

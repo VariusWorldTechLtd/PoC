@@ -1,0 +1,62 @@
+<ion-header translucent no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="secondary"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <form [formGroup]="confirmForm" (ngSubmit)="onConfirm()" novalidate>
+    <ion-list>
+
+      <div padding text-center style="margin-top: 56px;">
+        <img src="assets/images/vox_wallet-2col.svg" width="244px" height="auto">
+      </div>
+
+      <ion-item lines="none">
+        <h1>Confirm your seed words</h1>
+      </ion-item>
+
+      <ion-item>
+        <ion-textarea #seedWordsControl formControlName="seedWords" rows="5" minlength="12" maxLength="5000" placeholder="Seed words"
+          [disabled]="isSending" [class.invalid]="!confirmForm.controls.seedWords.valid && confirmForm.controls.seedWords.dirty"></ion-textarea>
+      </ion-item>
+
+      <ion-item *ngIf="!confirmForm.controls.seedWords.valid  && confirmForm.controls.seedWords.dirty" lines="none">
+        <p ion-text color="lightgray">Please enter a valid seed.</p>
+      </ion-item>
+
+      <ion-list-header>
+        
+      </ion-list-header>
+
+      <ion-item>
+        <ion-input #passwordControl formControlName="password" type="password" placeholder="New password (min. 8 chars)"
+          minlength="8" [disabled]="isSending" [class.invalid]="!confirmForm.controls.password.valid && confirmForm.controls.password.dirty"></ion-input>
+      </ion-item>
+
+      <ion-item *ngIf="!confirmForm.controls.password.valid  && confirmForm.controls.password.dirty" lines="none">
+        <p ion-text color="lightgray">Please enter a valid password.</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-input #confirmPasswordControl formControlName="confirmPassword" type="password" placeholder="Confirm password"
+          minlength="8" [disabled]="isSending" [class.invalid]="!confirmForm.controls.confirmPassword.valid && confirmForm.controls.confirmPassword.dirty"></ion-input>
+      </ion-item>
+
+      <ion-item *ngIf="!confirmForm.controls.confirmPassword.valid  && confirmForm.controls.confirmPassword.dirty" lines="none">
+        <p ion-text color="lightgray">Please enter a valid password.</p>
+      </ion-item>
+
+      <div padding text-center>
+        <ion-button color="secondary" expand="block" [disabled]="!confirmForm.valid || isSending"
+          type="submit">Confirm</ion-button>
+      </div>
+
+    </ion-list>
+  </form>
+
+</ion-content>

@@ -1,0 +1,13 @@
+#cameraMovin {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 240px; 
+    height: 240px;
+    transform: translateX(-50%);
+}
+
+ion-card img {
+    object-position: center;
+    object-fit: contain;
+}

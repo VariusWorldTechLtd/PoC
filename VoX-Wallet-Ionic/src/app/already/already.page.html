@@ -1,0 +1,41 @@
+<ion-header translucent no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="secondary"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <!-- <form [formGroup]="phoneForm" (ngSubmit)="onVerify()" novalidate> -->
+    <ion-list>
+
+      <div padding text-center style="margin-top: 56px;">
+        <img src="assets/images/vox_wallet-2col.svg" width="244px" height="auto">
+      </div>
+
+      <ion-item lines="none">
+        <h1>Restore account</h1>
+      </ion-item>
+
+      <ion-item>
+        <!-- <ion-input #phoneControl formControlName="phone" type="number" placeholder="Phone number" maxlength="11"
+          [disabled]="disableVerifyButton" [class.invalid]="!phoneForm.controls.phone.valid && phoneForm.controls.phone.dirty"></ion-input> -->
+        <ion-textarea rows="5" maxLength="5000" placeholder="Seed words"></ion-textarea>
+      </ion-item>
+
+      <!-- <ion-item *ngIf="!phoneForm.controls.phone.valid  && phoneForm.controls.phone.dirty" lines="none">
+        <p ion-text color="lightgray">Please enter a valid phone number.</p>
+      </ion-item> -->
+
+      <div padding text-center>
+        <!-- [disabled]="!phoneForm.valid || disableVerifyButton" type="submit" -->
+        <ion-button color="secondary" expand="block" (click)="onRestore();">Restore</ion-button>
+      </div>
+
+    </ion-list>
+  <!-- </form> -->
+
+</ion-content>

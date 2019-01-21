@@ -1,0 +1,75 @@
+<ion-header translucent no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="secondary"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <form [formGroup]="detailsForm" (ngSubmit)="onNext()" novalidate>
+    <ion-list>
+      <div padding text-center style="margin-top: 56px;">
+        <img src="assets/images/vox_wallet-2col.svg" width="244px" height="auto">
+      </div>
+
+      <ion-item lines="none">
+        <h1>Enter your details</h1>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Title</ion-label>
+        <ion-select #titleControl formControlName="title" [disabled]="isSending" ok-text="OK" cancel-text="Close">
+          <ion-select-option value="Ms">Ms</ion-select-option>
+          <ion-select-option value="Mr">Mr</ion-select-option>
+          <ion-select-option value="Mrs">Mrs</ion-select-option>
+          <ion-select-option value="Miss">Miss</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>First name</ion-label>
+        <ion-input #firstNameControl formControlName="firstName" type="text" placeholder="Enter first name" [disabled]="isSending"
+          [class.invalid]="!detailsForm.controls.firstName.valid && detailsForm.controls.firstName.dirty"></ion-input>
+      </ion-item>
+
+      <ion-item *ngIf="!detailsForm.controls.firstName.valid  && detailsForm.controls.firstName.dirty" lines="none">
+        <p ion-text color="lightgray">Please enter a valid name.</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Last name</ion-label>
+        <ion-input #lastNameControl formControlName="lastName" type="text" placeholder="Enter last name" [disabled]="isSending"
+          [class.invalid]="!detailsForm.controls.lastName.valid && detailsForm.controls.lastName.dirty"></ion-input>
+      </ion-item>
+
+      <ion-item *ngIf="!detailsForm.controls.lastName.valid  && detailsForm.controls.lastName.dirty" lines="none">
+        <p ion-text color="lightgray">Please enter a valid name.</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Date of birth</ion-label>
+        <ion-datetime #dateOfBirthControl formControlName="dateOfBirth" [disabled]="isSending" display-format="DD/MM/YYYY"
+          max="2001-12-31" placeholder="Select Date"></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input #emailControl formControlName="email" type="email" placeholder="Enter email" [disabled]="isSending"
+          [class.invalid]="!detailsForm.controls.email.valid && detailsForm.controls.email.dirty"></ion-input>
+      </ion-item>
+
+      <ion-item *ngIf="!detailsForm.controls.email.valid  && detailsForm.controls.email.dirty" lines="none">
+        <p ion-text color="lightgray">Please enter a valid email.</p>
+      </ion-item>
+
+      <div padding text-center>
+        <ion-button color="secondary" expand="block" [disabled]="!detailsForm.valid || isSending" type="submit" (click)="onNext();">Next</ion-button>
+      </div>
+
+    </ion-list>
+  </form>
+
+</ion-content>

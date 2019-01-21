@@ -1,0 +1,24 @@
+#lockMovin {
+    position: relative;
+    top: 0px;
+    left: 50%;
+    width: 150px; 
+    height: 150px;
+    transform: translateX(-50%);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+ion-col div {
+    background-color: #f9f9f9;
+    border-radius: 2px;
+    padding: 5px;
+    text-align: center;
+}
+
+ion-col div p {
+    margin: 0;
+}

@@ -1,0 +1,53 @@
+<ion-tabs>
+
+  <ion-tab tab="activity">
+    <ion-split-pane>
+      <ion-menu>
+        <ion-header translucent no-border>
+          <ion-toolbar>
+            <ion-title>Coming soon!</ion-title>
+          </ion-toolbar>
+        </ion-header>
+      </ion-menu>
+      <ion-router-outlet name="activity" main></ion-router-outlet>
+    </ion-split-pane>
+  </ion-tab>
+  <ion-tab tab="deposit">
+    <ion-router-outlet name="deposit"></ion-router-outlet>
+  </ion-tab>
+  <ion-tab tab="transfer">
+    <ion-router-outlet name="transfer"></ion-router-outlet>
+  </ion-tab>
+  <ion-tab tab="withdraw">
+    <ion-router-outlet name="withdraw"></ion-router-outlet>
+  </ion-tab>
+
+  <ion-tab-bar color="primary" slot="bottom">
+
+    <ion-tab-button tab="activity" href="/tabs/(activity:activity)">
+      <!-- <ion-icon name="flash"></ion-icon> -->
+      <img src="assets/icons/activity.svg" width="24px" margin-4 />
+      <ion-label>Activity</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="deposit" href="/tabs/(deposit:deposit)">
+      <!-- <ion-icon name="apps"></ion-icon> -->
+      <img src="assets/icons/deposit.svg" width="24px" margin-4 />
+      <ion-label>Deposit</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="transfer" href="/tabs/(transfer:transfer)">
+      <!-- <ion-icon name="send"></ion-icon> -->
+      <img src="assets/icons/transfer.svg" width="24px" margin-4 />
+      <ion-label>Transfer</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="withdraw" href="/tabs/(withdraw:withdraw)">
+      <!-- <ion-icon name="send"></ion-icon> -->
+      <img src="assets/icons/withdraw.svg" width="24px" margin-4 />
+      <ion-label>Withdraw</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+
+</ion-tabs>

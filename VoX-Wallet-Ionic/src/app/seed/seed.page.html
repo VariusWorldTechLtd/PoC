@@ -1,0 +1,71 @@
+<ion-header translucent no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="secondary"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      <div class="title-icon">
+        <img src="assets/images/vox_wallet-2col.svg" width="100px" />
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div id="lockMovin"></div>
+
+  <ion-grid style="margin-top: -20px;">
+    <!-- <div padding text-center>
+      <img src="assets/images/vox_wallet-2col.svg" width="244px" height="auto">
+    </div> -->
+
+    <ion-row nopadding>
+      <ion-col text-center>
+        <h1 text-center>Your seed words</h1>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col text-center>
+        <p text-center>This 12 word phrase will be used to recover your account. If you forget this phrase you will
+          lose your account
+          and your balance will be lost, forever.</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col text-center>
+        <h3 text-center>IMPORTANT: MAKE A NOTE OF THIS</h3>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col text-center>
+
+        <ion-grid>
+
+          <ng-template ngFor let-group [ngForOf]="seedWords">
+
+            <ion-row>
+              <ion-col *ngFor="let word of group" col-12 col-md-6 col-lg-3 col-xl-3>
+                <div>
+                  <p>{{ word }}</p>
+                </div>
+              </ion-col>
+            </ion-row>
+
+          </ng-template>
+
+        </ion-grid>
+
+      </ion-col>
+    </ion-row>
+
+    <div padding text-center>
+      <ion-button color="secondary" expand="block" (click)="onConfirm();">Confirm seed words</ion-button>
+    </div>
+
+  </ion-grid>
+
+</ion-content>

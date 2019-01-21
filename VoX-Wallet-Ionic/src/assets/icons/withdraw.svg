@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="28px" viewBox="0 0 30 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>withdraw_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="App_Screen_Mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-X-Onboarding-Welcome_New_User" transform="translate(-307.000000, -729.000000)" stroke="#FFFFFF">
+            <g id="withdraw_icon" transform="translate(308.000000, 729.000000)">
+                <path d="M28.3181,14.4491 L12.6301,14.4491" id="Stroke-1"></path>
+                <g id="Group-6" transform="translate(0.000000, 0.898400)">
+                    <polyline id="Stroke-2" points="23.0857 9.2587 28.4887 13.5607 23.1097 17.8427"></polyline>
+                    <polyline id="Stroke-4" points="20.5593 17.8427 20.5593 26.5977 0.4023 26.5977 0.4023 0.5037 20.5593 0.5037 20.5593 9.2597"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
